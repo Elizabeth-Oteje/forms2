@@ -1,0 +1,56 @@
+<html>
+<head>
+
+</head> 
+
+<body>
+    <form action="/welcomepage.html" method="get" target="_blank">
+        Name : <input size="40" pattern="[A-Za-z]{4,}" placeholder="please enter username" required type="text" name="uname"/> <br/>
+        Password : <input type="text"pattern="[a-zA-Z0-9*&]{8,}" name="uage"/> <br/>
+        Gender: <input type="radio" name="gender" value="M"/> Male
+        <input type="radio" checked name="gender" value="F"/> Female <br/>
+        Technologies:
+          <input type="checkbox" name="tech1" value="html"/> HTML
+          <input type="checkbox" checked name="tech2" value="css"/> CSS
+          <input type="checkbox" name="tech3" value="js"/> Java Script <br/>
+        City lived in:
+
+            <input list="cities"/>
+            <datalist id="cities">
+            <option value="BGR">Bengaluru</option>
+            <option value="DLH">Delhi</option>
+            <option selected value="KLK">Kolkata</option>
+            <option value="CHN">Chennai</option>
+            </datalist> <br/>
+
+            Upload your resume:
+            <input type="file" multiple/> <br/>
+            Your email id:
+            <input type="email"/> <br/>
+            Your phone number:
+            <input type="text" pattern="[0-9]{11}"/> <br/>
+            Your weight:
+            <input type="range" min="10" max="1000" step="50"/> <br/> 
+            Job applied details:
+            <input type="datetime-local"/> <br/>
+            Your Favorite color:
+            <input type="color"/> <br/>
+            Your Date of Birth:
+            <input type="date"/> <br/>
+            Birth time:
+            <input type="time"/> <br/>
+            Address: <textarea cols="10" rows="10">
+
+            </textarea> <br/>
+
+            <input type="button" value="Click me"/>
+            <input type="submit" value="Submit Form"/>
+            <input type="reset"/>
+
+    </form>
+  
+
+</body>
+
+
+</html>
